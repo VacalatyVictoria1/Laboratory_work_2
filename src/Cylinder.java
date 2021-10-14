@@ -1,5 +1,4 @@
-public class Cylinder extends Circle
-{
+public class Cylinder extends Circle{
 
     private double height;
     private double square;
@@ -16,6 +15,10 @@ public class Cylinder extends Circle
     public double getVolume()
     {
         return volume;
+    }
+
+    public double getHeight() {
+        return height;
     }
 
     public void setHeight(double height)

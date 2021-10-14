@@ -1,5 +1,4 @@
-public class Circle implements IFigure
-{
+public class Circle implements IFigure {
     private double radius;
     private double length;
     private double square;
@@ -11,6 +10,8 @@ public class Circle implements IFigure
         this.setLength();
         this.setSquare();
     }
+
+    public Circle(){}
 
     public void setLength()
     {
@@ -27,6 +28,11 @@ public class Circle implements IFigure
         return this.radius;
     }
 
+    /**
+     * Calculates the radius
+     *
+     * @param radius radius of the circle
+     */
     public void setRadius(final double radius)
     {
         if (radius > 0) {
@@ -52,5 +58,4 @@ public class Circle implements IFigure
     {
         return square;
     }
-
 }
